@@ -1,1 +1,1 @@
-Contains folder images
+Folder contains art for the planning and layout of the game.

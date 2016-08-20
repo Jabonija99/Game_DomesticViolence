@@ -1,1 +1,1 @@
-Folder for game design documents
+Folder contains documents that layout details about the game and its design.

@@ -1,1 +1,1 @@
-Folder contains all game files.
+Folder contains program files needed for the game.
