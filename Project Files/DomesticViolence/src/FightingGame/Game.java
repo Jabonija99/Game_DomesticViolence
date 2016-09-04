@@ -1,22 +1,21 @@
 /*
  * Project created by Jarone Jabonillo.
  */
-package javagame;
+package FightingGame;
 
 import org.newdawn.slick.*; //Imports all slick libraries
 import org.newdawn.slick.state.*; //Imports state/scene libraries
 
 public class Game extends StateBasedGame{ //Inherits state based games.
     
-    public static final String gName = "Blaster Game"; //Game name
-    public static final int gMenu = 0; //Int for main menu
-    public static final int gPlay = 1; //Int for playing screen
+    private static final String gName = "Untitled"; //Game name
+    private static final int gMenu = 0; //Int for main menu
+    private static final int gPlay = 1; //Int for playing screen
     
     public Game(String gName){
         super(gName); //Creates window; paremeter(title)
         this.addState(new Menu(gMenu)); //Creates menu state; parementer(screen class)
         this.addState(new Play(gPlay)); //Creates play state; parameter (screen class)
-        
     }
     
     
@@ -32,25 +31,6 @@ public class Game extends StateBasedGame{ //Inherits state based games.
         this.enterState(gMenu);
     }
     
-    public static void main(String []args){
-        //Create game window
-        AppGameContainer appGc;
-        
-        //Attempt to run the code
-        try{ 
-            //Creates a window that holds the class Game
-            appGc = new AppGameContainer(new Game(gName));
-            //Sets display mode; paremeters(width, length, fullscreen)
-            appGc.setDisplayMode(640, 360, false);
-            //Initiates screen
-            appGc.start();
-            
-        //Catch if error
-        }catch(SlickException error){
-            //Prints error
-            error.printStackTrace();
-        }
-        
-    }
+   
     
 }
